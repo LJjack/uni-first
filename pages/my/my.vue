@@ -1,6 +1,8 @@
 <template>
 	<view>
-		my
+		<!-- 使用自定义的搜索组件 -->
+		<my-search></my-search>
+		
 	</view>
 </template>
 

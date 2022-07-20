@@ -2,54 +2,46 @@
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/home/home",
-			"style": {
-			}
+			"style": {}
 		}, {
 			"path": "pages/cate/cate",
-			"style": {
-			}
+			"style": {}
 		}, {
 			"path": "pages/cart/cart",
-			"style": {
-			}
+			"style": {}
 		}, {
 			"path": "pages/my/my",
-			"style": {
-			}
+			"style": {}
 		}
 	],
-	"subPackages": [
-    {
-      "root": "subpkg",
-      "pages": [{
-                    "path" : "goods_detail/goods_detail",
-                    "style" :                                                                                    
-                {
-                }
-                
-                }
-                ,{
-                    "path" : "goods_list/goods_list",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
-    }
-  ],
+	"subPackages": [{
+		"root": "subpkg",
+		"pages": [{
+				"path": "goods_detail/goods_detail",
+				"style": {}
+
+			}, {
+				"path": "goods_list/goods_list",
+				"style": {}
+			},
+			{
+				"path": "search/search",
+				"style": {}
+			}
+		]
+	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "黑马优购",
-		"navigationBarBackgroundColor": "#50e9ff",
+		"navigationBarBackgroundColor": "#c00000",
 		"backgroundColor": "#FFFFFF"
+
 	},
 	"uniIdRouter": {},
 
 	"tabBar": {
 		"selectedColor": "#50e9ff",
+
 		"list": [{
 				"pagePath": "pages/home/home",
 				"text": "首页",
