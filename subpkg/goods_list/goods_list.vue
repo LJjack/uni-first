@@ -99,9 +99,5 @@
 </script>
 
 <style lang="scss">
-	.goods-item {
-		display: flex;
-		padding: 10px 5px;
-		border-bottom: 1px solid #f0f0f0;
-	}
+	
 </style>
