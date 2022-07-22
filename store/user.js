@@ -4,12 +4,14 @@ export default {
 
 	// 模块的 state 数据
 	state: {
-		 // 收货地址
-		  address: JSON.parse(uni.getStorageSync('address') || '{}'),
-		  // 登录成功之后的 token 字符串
-		  token: uni.getStorageSync('token') || '',
-		  // 用户的基本信息
-		  userinfo: JSON.parse(uni.getStorageSync('userinfo') || '{}')
+		// 收货地址
+		address: JSON.parse(uni.getStorageSync('address') || '{}'),
+		// 登录成功之后的 token 字符串
+		token: uni.getStorageSync('token') || '',
+		// 用户的基本信息
+		userinfo: JSON.parse(uni.getStorageSync('userinfo') || '{}'),
+		// 重定向的 object 对象 { openType, from }
+		redirectInfo: null
 
 	},
 
@@ -47,6 +49,10 @@ export default {
 		// 将 token 字符串持久化存储到本地
 		saveTokenToStorage(state) {
 			uni.setStorageSync('token', state.token)
+		},
+		// 更新重定向的信息对象
+		updateRedirectInfo(state, info) {
+			state.redirectInfo = info
 		}
 	},
 
