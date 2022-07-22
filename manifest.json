@@ -1,5 +1,5 @@
 {
-    "name" : "uni-first",
+    "name" : "黑马购物",
     "appid" : "",
     "description" : "",
     "versionName" : "1.0.0",
@@ -55,7 +55,7 @@
             "urlCheck" : false,
             "minified" : true,
             "postcss" : true,
-			"checkSiteMap":false
+            "checkSiteMap" : false
         },
         "usingComponents" : true,
         "permission" : {}
